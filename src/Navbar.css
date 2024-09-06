@@ -1,10 +1,12 @@
-/* src/Navbar.css */
+/* General Navbar Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    background-color: #fff;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    position: relative;
 }
 
 .navbar-logo {
@@ -37,7 +39,7 @@
 .hamburger-icon {
     width: 2rem;
     height: 0.25rem;
-    background: #000;
+    background: #fff;
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
@@ -49,7 +51,7 @@
     position: absolute;
     width: 2rem;
     height: 0.25rem;
-    background: #000;
+    background: #fff;
     border-radius: 10px;
     transition: all 0.3s linear;
 }
@@ -70,6 +72,13 @@
 .navbar-links li {
     margin-left: 1rem;
     cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
 }
 
 @media (max-width: 768px) {
@@ -84,7 +93,7 @@
         position: absolute;
         top: 4rem;
         left: 0;
-        background-color: #fff;
+        background-color: #333;
         padding: 1rem;
     }
 
