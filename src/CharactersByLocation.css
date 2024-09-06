@@ -1,0 +1,133 @@
+/* Base styling for the component */
+.character-by-location {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* Back button styling */
+button {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3b82f6;
+}
+
+/* Locations list styling */
+.locations-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.locations-list button {
+    background-color: #1e40af;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.locations-list button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Character card styling */
+.characters-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+@media (min-width: 640px) {
+    .characters-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .characters-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .characters-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Individual character card styling */
+.character-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.character-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.character-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.character-item .p-4 {
+    padding: 1rem;
+}
+
+.character-item p {
+    margin: 0.5rem 0;
+}
+
+.character-item .font-bold {
+    color: #1e40af;
+}
+
+.character-item .text-gray-600 {
+    color: #6b7280;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 639px) {
+    .character-item img {
+        height: 150px;
+    }
+
+    .character-item .font-bold {
+        font-size: 1rem;
+    }
+
+    .character-item .text-gray-600 {
+        font-size: 0.875rem;
+    }
+}
+
+/* Loading and Error States */
+p {
+    text-align: center;
+    color: #555;
+    font-size: 1.125rem;
+}

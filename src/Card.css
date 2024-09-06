@@ -1,0 +1,167 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2c3e50; /* Midnight Blue */
+    padding: 20px;
+}
+
+/* Gallery Layout */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+@media (min-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+}
+
+/* Card Styles */
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    background: #34495e; /* Wet Asphalt */
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #2c3e50; /* Midnight Blue */
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+.card:hover::before {
+    top: -70%;
+    transform: skewY(390deg);
+}
+
+.card::after {
+    content: "Phillips";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+/* Image Box */
+.card .imgBx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    background: #34495e; /* Wet Asphalt */
+}
+
+.card .imgBx img {
+    max-width: 90%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.card:hover .imgBx img {
+    max-width: 80%;
+}
+
+/* Content Box */
+.card .contentBx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 1;
+    background: #2c3e50; /* Midnight Blue */
+}
+
+.card .contentBx h3 {
+    font-size: 20px;
+    color: #ecf0f1; /* Clouds */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.card .contentBx .price {
+    font-size: 18px;
+    color: #ecf0f1; /* Clouds */
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* Buy Button (First Link) */
+.card .contentBx .buy {
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: #ecf0f1; /* Clouds */
+    font-weight: bold;
+    text-decoration: none;
+    background: #1abc9c; /* Turquoise */
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.card .contentBx .buy:hover {
+    background-color: #16a085; /* Green Sea */
+}
+
+/* Location Link (Second Link) */
+.card .contentBx .location-link {
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 10px;
+    color: #ecf0f1; /* Clouds */
+    font-weight: bold;
+    text-decoration: none;
+    background: #3498db; /* Peter River */
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.card .contentBx .location-link:hover {
+    background-color: #2980b9; /* Belize Hole */
+}
+
+/* Hover Animation for Both Links */
+.card:hover .contentBx .buy,
+.card:hover .contentBx .location-link {
+    opacity: 1;
+}

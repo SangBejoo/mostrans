@@ -1,0 +1,9 @@
+name: Ayub Subagiya
+schema: schema.graphql
+documents: '**/*.graphql'
+extensions:
+  endpoints:
+    default:
+      url: ${REACT_APP_API_URL}
+      headers:
+        user-agent: 'JS GraphQL'

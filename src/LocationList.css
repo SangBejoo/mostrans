@@ -1,0 +1,32 @@
+.location-list {
+    text-align: center;
+    padding: 20px;
+}
+
+.location-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.location-list li {
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.location-list li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Mobile-first styles */
+@media (min-width: 768px) {
+    .location-list {
+        padding: 40px;
+    }
+
+    .location-list li {
+        padding: 15px;
+    }
+}
