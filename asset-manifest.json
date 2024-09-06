@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mostrans/static/css/main.e1f20623.css",
-    "main.js": "/mostrans/static/js/main.fd9828fa.js",
+    "main.js": "/mostrans/static/js/main.ad0b9230.js",
     "static/css/376.55fdbcc4.chunk.css": "/mostrans/static/css/376.55fdbcc4.chunk.css",
     "static/js/376.4e425641.chunk.js": "/mostrans/static/js/376.4e425641.chunk.js",
     "static/css/706.1ba2d251.chunk.css": "/mostrans/static/css/706.1ba2d251.chunk.css",
@@ -13,7 +13,7 @@
     "static/js/472.9a54f66b.chunk.js": "/mostrans/static/js/472.9a54f66b.chunk.js",
     "index.html": "/mostrans/index.html",
     "main.e1f20623.css.map": "/mostrans/static/css/main.e1f20623.css.map",
-    "main.fd9828fa.js.map": "/mostrans/static/js/main.fd9828fa.js.map",
+    "main.ad0b9230.js.map": "/mostrans/static/js/main.ad0b9230.js.map",
     "376.55fdbcc4.chunk.css.map": "/mostrans/static/css/376.55fdbcc4.chunk.css.map",
     "376.4e425641.chunk.js.map": "/mostrans/static/js/376.4e425641.chunk.js.map",
     "706.1ba2d251.chunk.css.map": "/mostrans/static/css/706.1ba2d251.chunk.css.map",
@@ -26,6 +26,6 @@
   },
   "entrypoints": [
     "static/css/main.e1f20623.css",
-    "static/js/main.fd9828fa.js"
+    "static/js/main.ad0b9230.js"
   ]
 }
