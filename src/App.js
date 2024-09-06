@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react';
-import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
+import { Route, Routes, HashRouter as Router } from 'react-router-dom';
 import Navbar from './Navbar';
 import './App.css';
 
@@ -23,7 +23,7 @@ const App = () => {
 };
 
 const AppWrapper = () => (
-    <Router basename="/mostrans">
+    <Router>
         <App />
     </Router>
 );
