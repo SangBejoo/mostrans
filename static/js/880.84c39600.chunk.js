@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkayubsubagiya=self.webpackChunkayubsubagiya||[]).push([[880],{880:(a,s,e)=>{e.r(s),e.d(s,{default:()=>i});e(43);var c=e(579);const i=()=>(0,c.jsx)("div",{className:"landing-page",children:(0,c.jsx)("section",{className:"showcase",children:(0,c.jsxs)("div",{className:"content",children:[(0,c.jsx)("h1",{children:"Ayub Subagiya"}),(0,c.jsx)("h3",{children:"Rick and Morty Graph QL"}),(0,c.jsx)("a",{href:"/character-list",className:"btn",children:"Character List"})]})})})}}]);
-//# sourceMappingURL=880.84c39600.chunk.js.map
