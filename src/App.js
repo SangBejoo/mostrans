@@ -29,7 +29,7 @@ const App = () => {
 };
 
 const AppWrapper = () => (
-    <Router>
+    <Router basename="/mostrans">
         <App />
     </Router>
 );
