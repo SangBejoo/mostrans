@@ -1,31 +1,27 @@
 {
   "files": {
-    "main.css": "/mostrans/static/css/main.e1f20623.css",
-    "main.js": "/mostrans/static/js/main.cb330911.js",
+    "main.css": "/mostrans/static/css/main.5431f360.css",
+    "main.js": "/mostrans/static/js/main.eb2dff74.js",
     "static/css/376.55fdbcc4.chunk.css": "/mostrans/static/css/376.55fdbcc4.chunk.css",
     "static/js/376.4e425641.chunk.js": "/mostrans/static/js/376.4e425641.chunk.js",
     "static/css/706.1ba2d251.chunk.css": "/mostrans/static/css/706.1ba2d251.chunk.css",
     "static/js/706.5614541e.chunk.js": "/mostrans/static/js/706.5614541e.chunk.js",
     "static/css/689.895df208.chunk.css": "/mostrans/static/css/689.895df208.chunk.css",
     "static/js/689.ba44a550.chunk.js": "/mostrans/static/js/689.ba44a550.chunk.js",
-    "static/css/880.6ce415f8.chunk.css": "/mostrans/static/css/880.6ce415f8.chunk.css",
-    "static/js/880.96d2ce4d.chunk.js": "/mostrans/static/js/880.96d2ce4d.chunk.js",
     "static/js/472.9a54f66b.chunk.js": "/mostrans/static/js/472.9a54f66b.chunk.js",
     "index.html": "/mostrans/index.html",
-    "main.e1f20623.css.map": "/mostrans/static/css/main.e1f20623.css.map",
-    "main.cb330911.js.map": "/mostrans/static/js/main.cb330911.js.map",
+    "main.5431f360.css.map": "/mostrans/static/css/main.5431f360.css.map",
+    "main.eb2dff74.js.map": "/mostrans/static/js/main.eb2dff74.js.map",
     "376.55fdbcc4.chunk.css.map": "/mostrans/static/css/376.55fdbcc4.chunk.css.map",
     "376.4e425641.chunk.js.map": "/mostrans/static/js/376.4e425641.chunk.js.map",
     "706.1ba2d251.chunk.css.map": "/mostrans/static/css/706.1ba2d251.chunk.css.map",
     "706.5614541e.chunk.js.map": "/mostrans/static/js/706.5614541e.chunk.js.map",
     "689.895df208.chunk.css.map": "/mostrans/static/css/689.895df208.chunk.css.map",
     "689.ba44a550.chunk.js.map": "/mostrans/static/js/689.ba44a550.chunk.js.map",
-    "880.6ce415f8.chunk.css.map": "/mostrans/static/css/880.6ce415f8.chunk.css.map",
-    "880.96d2ce4d.chunk.js.map": "/mostrans/static/js/880.96d2ce4d.chunk.js.map",
     "472.9a54f66b.chunk.js.map": "/mostrans/static/js/472.9a54f66b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1f20623.css",
-    "static/js/main.cb330911.js"
+    "static/css/main.5431f360.css",
+    "static/js/main.eb2dff74.js"
   ]
 }
