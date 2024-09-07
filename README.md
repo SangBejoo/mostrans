@@ -1,1 +1,14 @@
-![Uploading {8D7D9E2D-45E2-43F3-89E3-6F727626C7DC}.png…]()
+# Project Name
+
+## Description
+A brief description of the project.
+
+## Lighthouse Report
+![Lighthouse Report](../lighthouse.png)
+
+## UI/UX
+Description of the UI/UX design principles and decisions.
+![Lighthouse Report](../UIUX.png)
+
+## Additional Information
+Any additional information about the project.
