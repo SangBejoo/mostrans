@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/mostrans/static/css/main.45311761.css",
-    "main.js": "/mostrans/static/js/main.0f760a7d.js",
-    "static/css/376.ad44e18e.chunk.css": "/mostrans/static/css/376.ad44e18e.chunk.css",
-    "static/js/376.e137bd4a.chunk.js": "/mostrans/static/js/376.e137bd4a.chunk.js",
-    "static/css/706.1ba2d251.chunk.css": "/mostrans/static/css/706.1ba2d251.chunk.css",
-    "static/js/706.5614541e.chunk.js": "/mostrans/static/js/706.5614541e.chunk.js",
-    "static/css/689.895df208.chunk.css": "/mostrans/static/css/689.895df208.chunk.css",
-    "static/js/689.ba44a550.chunk.js": "/mostrans/static/js/689.ba44a550.chunk.js",
+    "main.css": "/mostrans/static/css/main.bf436533.css",
+    "main.js": "/mostrans/static/js/main.40ba5450.js",
+    "static/css/376.3178cd1d.chunk.css": "/mostrans/static/css/376.3178cd1d.chunk.css",
+    "static/js/376.89903980.chunk.js": "/mostrans/static/js/376.89903980.chunk.js",
+    "static/css/706.7fb3bae3.chunk.css": "/mostrans/static/css/706.7fb3bae3.chunk.css",
+    "static/js/706.9e78ccf6.chunk.js": "/mostrans/static/js/706.9e78ccf6.chunk.js",
+    "static/css/689.5d450b6a.chunk.css": "/mostrans/static/css/689.5d450b6a.chunk.css",
+    "static/js/689.f8eb0de5.chunk.js": "/mostrans/static/js/689.f8eb0de5.chunk.js",
     "static/js/472.9a54f66b.chunk.js": "/mostrans/static/js/472.9a54f66b.chunk.js",
     "index.html": "/mostrans/index.html",
-    "main.45311761.css.map": "/mostrans/static/css/main.45311761.css.map",
-    "main.0f760a7d.js.map": "/mostrans/static/js/main.0f760a7d.js.map",
-    "376.ad44e18e.chunk.css.map": "/mostrans/static/css/376.ad44e18e.chunk.css.map",
-    "376.e137bd4a.chunk.js.map": "/mostrans/static/js/376.e137bd4a.chunk.js.map",
-    "706.1ba2d251.chunk.css.map": "/mostrans/static/css/706.1ba2d251.chunk.css.map",
-    "706.5614541e.chunk.js.map": "/mostrans/static/js/706.5614541e.chunk.js.map",
-    "689.895df208.chunk.css.map": "/mostrans/static/css/689.895df208.chunk.css.map",
-    "689.ba44a550.chunk.js.map": "/mostrans/static/js/689.ba44a550.chunk.js.map",
+    "main.bf436533.css.map": "/mostrans/static/css/main.bf436533.css.map",
+    "main.40ba5450.js.map": "/mostrans/static/js/main.40ba5450.js.map",
+    "376.3178cd1d.chunk.css.map": "/mostrans/static/css/376.3178cd1d.chunk.css.map",
+    "376.89903980.chunk.js.map": "/mostrans/static/js/376.89903980.chunk.js.map",
+    "706.7fb3bae3.chunk.css.map": "/mostrans/static/css/706.7fb3bae3.chunk.css.map",
+    "706.9e78ccf6.chunk.js.map": "/mostrans/static/js/706.9e78ccf6.chunk.js.map",
+    "689.5d450b6a.chunk.css.map": "/mostrans/static/css/689.5d450b6a.chunk.css.map",
+    "689.f8eb0de5.chunk.js.map": "/mostrans/static/js/689.f8eb0de5.chunk.js.map",
     "472.9a54f66b.chunk.js.map": "/mostrans/static/js/472.9a54f66b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45311761.css",
-    "static/js/main.0f760a7d.js"
+    "static/css/main.bf436533.css",
+    "static/js/main.40ba5450.js"
   ]
 }
