@@ -1,12 +1,15 @@
-/* General Navbar Styles */
+/* General Navbar Styling */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: #333;
+    padding: 1rem;
+    background-color: #282c34;
     color: #fff;
     position: relative;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .navbar-logo {
@@ -18,90 +21,138 @@
 .logo {
     font-size: 1.5rem;
     margin-right: 0.5rem;
+    color: #61dafb;
 }
 
 .app-name {
+    font-weight: 600;
     font-size: 1.2rem;
-    font-weight: bold;
+    margin-right: auto;
 }
 
 .hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 2rem;
-    height: 2rem;
-    background: transparent;
-    border: none;
+    display: none; /* Hide hamburger on desktop */
     cursor: pointer;
+    background: none;
+    border: none;
+    position: relative;
+    z-index: 10;
+}
+
+.hamburger.is-active .hamburger-icon::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.hamburger.is-active .hamburger-icon::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.hamburger.is-active .hamburger-icon {
+    background-color: transparent;
 }
 
 .hamburger-icon {
-    width: 2rem;
-    height: 0.25rem;
-    background: #fff;
-    border-radius: 10px;
-    transition: all 0.3s linear;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
     position: relative;
+    transition: all 0.3s ease;
 }
 
 .hamburger-icon::before,
 .hamburger-icon::after {
     content: '';
     position: absolute;
-    width: 2rem;
-    height: 0.25rem;
-    background: #fff;
-    border-radius: 10px;
-    transition: all 0.3s linear;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
 }
 
 .hamburger-icon::before {
-    transform: translateY(-0.6rem);
+    top: -8px;
 }
 
 .hamburger-icon::after {
-    transform: translateY(0.6rem);
+    top: 8px;
 }
 
+/* Navbar links */
 .navbar-links {
     display: flex;
     list-style: none;
+    position: fixed;
+    top: 0;
+    left: -100%;  /* Awal menu tersembunyi di kiri */
+    background-color: #282c34;
+    width: 250px; /* Lebar yang proporsional */
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.3s ease;  /* Animasi smooth */
+}
+
+.navbar-links.open {
+    left: 0;  /* Ketika menu terbuka, geser masuk dari kiri */
 }
 
 .navbar-links li {
-    margin-left: 1rem;
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    color: #fff;
     cursor: pointer;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s;
 }
 
 .navbar-links li:hover {
-    background-color: #555;
+    color: #61dafb;
 }
 
+/* Mobile Hamburger Button */
 @media (max-width: 768px) {
     .hamburger {
-        display: flex;
+        display: block; /* Show hamburger on mobile */
     }
 
     .navbar-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 4rem;
-        left: 0;
-        background-color: #333;
-        padding: 1rem;
+        position: fixed; /* Menempel di layar */
+        top: 0;
+        left: -100%; /* Awalnya tersembunyi */
+        width: 250px; /* Lebar yang lebih baik untuk menu sidebar */
+        height: 100vh;
+        background-color: #282c34;
+        transition: left 0.3s ease-in-out; /* Transisi untuk animasi masuk/keluar */
+        z-index: 1000;
     }
 
     .navbar-links.open {
-        display: flex;
+        left: 0; /* Menu masuk ke dalam layar */
     }
 
     .navbar-links li {
         margin: 1rem 0;
+        font-size: 1.2rem;
+    }
+}
+
+/* Desktop Navbar Links */
+@media (min-width: 769px) {
+    .navbar-links {
+        position: static;
+        flex-direction: row;
+        height: auto;
+        width: auto;
+        background-color: transparent;
+        left: auto;
+        top: auto;
+        transition: none;
+    }
+
+    .navbar-links li {
+        margin: 0 1rem;
+        font-size: 1rem;
     }
 }

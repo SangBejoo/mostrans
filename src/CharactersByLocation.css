@@ -81,6 +81,8 @@ button:hover {
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%; /* Ensure the card takes full width of the grid column */
+    height: 300px; /* Set a fixed height for consistency */
 }
 
 .character-item:hover {
@@ -90,12 +92,16 @@ button:hover {
 
 .character-item img {
     width: 100%;
-    height: 200px;
+    height: 60%; /* Adjust the height to fit within the card */
     object-fit: cover;
 }
 
 .character-item .p-4 {
     padding: 1rem;
+    height: 40%; /* Adjust the height to fit within the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .character-item p {
@@ -109,7 +115,6 @@ button:hover {
 .character-item .text-gray-600 {
     color: #6b7280;
 }
-
 /* Mobile responsiveness */
 @media (max-width: 639px) {
     .character-item img {
@@ -130,4 +135,35 @@ p {
     text-align: center;
     color: #555;
     font-size: 1.125rem;
+}
+
+/* Pagination styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #1e40af;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #1d4ed8;
+}
+
+.pagination button:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+}
+
+.pagination .active {
+    background-color: #3b82f6;
 }
