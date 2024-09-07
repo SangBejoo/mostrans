@@ -13,7 +13,7 @@ const CharactersByLocation = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [activePage, setActivePage] = useState(1);
     const [visiblePages, setVisiblePages] = useState([1, 2, 3]);
-    const charactersPerPage = 16;
+    const charactersPerPage = 8;
 
     const { loading, error, data } = useQuery(GET_LOCATIONS);
     const { loading: charactersLoading, error: charactersError, data: charactersData } = useQuery(GET_CHARACTERS_BY_LOCATION, {

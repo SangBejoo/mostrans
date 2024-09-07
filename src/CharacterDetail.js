@@ -39,10 +39,11 @@ const CharacterDetail = () => {
 
     return (
         <div className="character-detail">
-            <button onClick={() => navigate('/character-list')}>Back to Character List</button>
-            <button onClick={() => navigate('/location')}>Back to CharacterByLocation</button>
-            <img src={character.image} alt={character.name} />
-            <h1>{character.name}</h1>
+            <div className="character-header">
+                <img src={character.image} alt={character.name} />
+                <h1>{character.name}</h1>
+            </div>
+
             <div className="character-info">
                 <p><strong>Status:</strong> {character.status}</p>
                 <p><strong>Species:</strong> {character.species}</p>
@@ -51,6 +52,7 @@ const CharacterDetail = () => {
                 <p><strong>Origin:</strong> {character.origin.name}</p>
                 <p><strong>Last known location:</strong> {character.location.name}</p>
             </div>
+
             <div className="character-episodes">
                 <h2>Episodes:</h2>
                 <ul>
@@ -59,6 +61,7 @@ const CharacterDetail = () => {
                     ))}
                 </ul>
             </div>
+
             <form onSubmit={handleAssign}>
                 <select
                     value={locationId}
@@ -74,9 +77,14 @@ const CharacterDetail = () => {
                 </select>
                 <button type="submit">Assign to Location</button>
             </form>
+
             {assignError && <p className="error">Error: {assignError}</p>}
+
+            <div className="navigation-buttons">
+                <button onClick={() => navigate('/character-list')}>Back to Character List</button>
+                <button onClick={() => navigate('/location')}>Back to CharacterByLocation</button>
+            </div>
         </div>
     )
 }
-
-export default CharacterDetail
+    export default CharacterDetail

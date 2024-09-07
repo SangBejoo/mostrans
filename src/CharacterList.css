@@ -61,3 +61,27 @@ p {
     font-size: 1.25rem;
     color: #555;
 }
+/* CharacterList.css */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #233142;
+    color: #f7f7ff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination button.active {
+    background-color: #5cdb95;
+}
+
+.pagination button:hover {
+    background-color: #379683;
+}

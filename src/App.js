@@ -11,7 +11,7 @@ const App = () => {
     return (
         <div className="App">
             <Navbar />
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className="loading">Loading...</div>}>
                 <Routes>
                     <Route path="/character-list" element={<CharacterList />} />
                     <Route path="/location" element={<CharactersByLocation />} />
